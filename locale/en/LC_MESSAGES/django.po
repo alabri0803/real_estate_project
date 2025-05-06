@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-06 10:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: properties/models.py:7
+msgid "تجاري"
+msgstr "Commercial"
+
+#: properties/models.py:8
+msgid "سكني"
+msgstr "Residential"
+
+#: properties/models.py:9
+msgid "مختلط"
+msgstr "Mixed-use"
+
+#: properties/models.py:11
+msgid "اسم المبنى"
+msgstr "Building name"
+
+#: properties/models.py:15
+msgid "نوع المبنى"
+msgstr "Building type"
+
+#: properties/models.py:21
+msgid "العنوان"
+msgstr "Address"
+
+#: properties/models.py:24
+msgid "المدينة"
+msgstr "City"
+
+#: properties/models.py:28
+msgid "إجمالي الطوابق"
+msgstr "Total floors"
+
+#: properties/models.py:31
+msgid "تاريخ الإنشاء"
+msgstr "Construction date"
+
+#: properties/models.py:36
+msgid "مبنى"
+msgstr "Building"
+
+#: properties/models.py:37
+msgid "المباني"
+msgstr "Buildings"
+
+#: properties/models.py:47
+msgid "المبنى"
+msgstr "The building"
+
+#: properties/models.py:50
+msgid "رقم الطابق"
+msgstr "Floor number"
+
+#: properties/models.py:53
+msgid "إجمالي الوحدات"
+msgstr "Total units"
+
+#: properties/models.py:57
+msgid "طابق"
+msgstr "Floor"
+
+#: properties/models.py:58
+msgid "الطوابق"
+msgstr "Floors"
+
+#: properties/models.py:66
+msgid "شقة"
+msgstr "Apartment"
+
+#: properties/models.py:67
+msgid "مكتب"
+msgstr "Office"
+
+#: properties/models.py:68
+msgid "محل تجاري"
+msgstr "Commercial shop"
+
+#: properties/models.py:69
+msgid "مستودع"
+msgstr "Warehouse"
+
+#: properties/models.py:74
+msgid "الطابق"
+msgstr "The floor"
+
+#: properties/models.py:77
+msgid "رقم الوحدة"
+msgstr "Unit number"
+
+#: properties/models.py:81
+msgid "نوع الوحدة"
+msgstr "Unit type"
+
+#: properties/models.py:87
+msgid "المساحة(متر مربع)"
+msgstr "Area (square meters)"
+
+#: properties/models.py:92
+msgid "الحالة"
+msgstr "Status"
+
+#: properties/models.py:95
+msgid "شاغر"
+msgstr "Vacant"
+
+#: properties/models.py:96
+msgid "مشغول"
+msgstr "Occupied"
+
+#: properties/models.py:97
+msgid "تحت الصيانة"
+msgstr "Under maintenance"
+
+#: properties/models.py:103
+msgid "وحدة"
+msgstr "Unit"
+
+#: properties/models.py:104
+msgid "الوحدات"
+msgstr "Units"
