@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.timezone import now
 from django.utils.translation import gettext_lazy as _
 
 from agents.models import RealEstateAgent
@@ -98,6 +99,36 @@ class Contract(models.Model):
 
   def __str__(self):
     return f"{self.contract_number} - {self.unit} - {self.tenant.name}"
+
+  def get_absolute_url(self):
+    return reverse('contracts:detail', kwargs={'pk': self.pk})
+  def get_actions(self, user):
+    actions = []
+    if user.has_perm('contracts.change_contract'):
+      actions.append({
+        'name': _('تعديل'),
+        'url': reversed('contracts:update', kwargs={'pk': self.pk}), 'class': 'btn btn-primary'
+      })
+    if user.has_perm('contracts.delete_contract'):
+      actions.append({
+        'name': _('حذف'),
+        'url': reversed('contracts:delete', kwargs={'pk': self.pk}), 'class': 'btn btn-danger'
+      })
+    if user.has_perm('documents.add_generateddocument'):
+      actions.append({
+        'name': _('إنشاء مستند'),
+        'url': reversed('documents:create_form_contract', kwargs={'contract_id': self.pk}), 'class': 'btn btn-success'
+      })
+      return actions
+
+  def get_status_badge(self):
+    if not self.is_active:
+      return '<span class="badge badge-secondary">غير نشط</span>'
+    if self.end_date < now().date():
+      return '<span class="badge badge-danger">منتهي</span>'
+    elif self.end_date and (self.end_date - now().date()).days <= 30:
+      return '<span class="badge badge-warning">قريب للانتهاء</span>'
+    get_status_badge.allow_tags = True
 
 class ContractDocument(models.Model):
   contract = models.ForeignKey(
