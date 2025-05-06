@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'properties',
     'tenants',
     'agents',
@@ -162,3 +163,4 @@ OMAN_SETTINGS = {
         ('certificate', _('شهادة')),
     ],
 }
+AUTH_USER_MODEL = 'accounts.User'
