@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 13:33+0000\n"
+"POT-Creation-Date: 2025-05-06 14:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,119 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: accounts/apps.py:8
+msgid "إدارة الحسابات"
+msgstr ""
+
+#: accounts/models.py:8
+msgid "مدير النظام"
+msgstr ""
+
+#: accounts/models.py:9
+msgid "مدير عقارات"
+msgstr ""
+
+#: accounts/models.py:10
+msgid "محاسب"
+msgstr ""
+
+#: accounts/models.py:11 agents/models.py:50
+msgid "وسيط عقاري"
+msgstr ""
+
+#: accounts/models.py:12
+msgid "عميل"
+msgstr ""
+
+#: accounts/models.py:15
+msgid "نوع المستخدم"
+msgstr ""
+
+#: accounts/models.py:21
+msgid "رقم الهاتف "
+msgstr ""
+
+#: accounts/models.py:26 agents/models.py:31 properties/models.py:21
+#: reports/models.py:114 tenants/models.py:43
+msgid "العنوان"
+msgstr ""
+
+#: accounts/models.py:30 properties/models.py:24 tenants/models.py:46
+msgid "المدينة"
+msgstr ""
+
+#: accounts/models.py:35
+msgid "صورة الملف الشخصي"
+msgstr ""
+
+#: accounts/models.py:41
+msgid "موثق؟"
+msgstr ""
+
+#: accounts/models.py:45
+msgid "رقم البطاقة الشخصية"
+msgstr ""
+
+#: accounts/models.py:53
+msgid "مستخدم"
+msgstr ""
+
+#: accounts/models.py:54
+msgid "المستخدمون"
+msgstr ""
+
+#: accounts/models.py:64
+msgid "المستخدم"
+msgstr ""
+
+#: accounts/models.py:67
+msgid "الإجراء"
+msgstr ""
+
+#: accounts/models.py:71
+msgid "التفاصيل"
+msgstr ""
+
+#: accounts/models.py:75
+msgid "عنوان IP"
+msgstr ""
+
+#: accounts/models.py:80 reports/models.py:134
+msgid "وقت الإنشاء"
+msgstr ""
+
+#: accounts/models.py:85
+msgid "سجل نشاط المستخدم"
+msgstr ""
+
+#: accounts/models.py:86
+msgid "سجلات نشاط المستخدمين"
+msgstr ""
+
+#: accounts/models.py:95
+msgid "إدارة العقارات"
+msgstr ""
+
+#: accounts/models.py:96
+msgid "إدارة العقود"
+msgstr ""
+
+#: accounts/models.py:97
+msgid "إدارة الفواتير"
+msgstr ""
+
+#: accounts/models.py:98
+msgid "إنشاء التقارير"
+msgstr ""
+
+#: accounts/models.py:99
+msgid "عرض لوحة التحكم"
+msgstr ""
+
+#: accounts/models.py:100
+msgid "إدارة المستخدمين"
+msgstr ""
 
 #: agents/models.py:12
 msgid "حساب المستخدم"
@@ -37,10 +150,6 @@ msgstr ""
 
 #: agents/models.py:28 tenants/models.py:40 tenants/models.py:86
 msgid "البريد الإلكتروني"
-msgstr ""
-
-#: agents/models.py:31 properties/models.py:21 tenants/models.py:43
-msgid "العنوان"
 msgstr ""
 
 #: agents/models.py:34
@@ -65,10 +174,6 @@ msgstr ""
 
 #: agents/models.py:45 contracts/models.py:82 tenants/models.py:55
 msgid "نشط"
-msgstr ""
-
-#: agents/models.py:50
-msgid "وسيط عقاري"
 msgstr ""
 
 #: agents/models.py:51
@@ -99,7 +204,8 @@ msgstr ""
 msgid "رقم الفاتورة"
 msgstr ""
 
-#: billing/models.py:24 contracts/models.py:107
+#: billing/models.py:24 contracts/models.py:107 documents/models.py:51
+#: reports/models.py:104
 msgid "العقد"
 msgstr ""
 
@@ -111,11 +217,11 @@ msgstr ""
 msgid "نوع الفاتورة"
 msgstr ""
 
-#: billing/models.py:39 services/models.py:89
+#: billing/models.py:39 documents/models.py:74 services/models.py:89
 msgid "تاريخ الإصدار"
 msgstr ""
 
-#: billing/models.py:43 services/models.py:93
+#: billing/models.py:43 reports/models.py:121 services/models.py:93
 msgid "تاريخ الاستحقاق"
 msgstr ""
 
@@ -140,7 +246,7 @@ msgid "تم السداد؟"
 msgstr ""
 
 #: billing/models.py:70 billing/models.py:130 contracts/models.py:86
-#: properties/models.py:31
+#: properties/models.py:31 reports/models.py:72
 msgid "تاريخ الإنشاء"
 msgstr ""
 
@@ -188,7 +294,7 @@ msgstr ""
 msgid "رقم المرجع"
 msgstr ""
 
-#: billing/models.py:120 contracts/models.py:128
+#: billing/models.py:120 contracts/models.py:128 documents/models.py:82
 msgid "ملاحظات"
 msgstr ""
 
@@ -204,11 +310,11 @@ msgstr ""
 msgid "السدادات"
 msgstr ""
 
-#: contracts/models.py:11 real_estate_project/settings.py:153
+#: contracts/models.py:11 real_estate_project/settings.py:158
 msgid "إيجار تجاري"
 msgstr ""
 
-#: contracts/models.py:12 real_estate_project/settings.py:154
+#: contracts/models.py:12 real_estate_project/settings.py:159
 msgid "إيجار سكني"
 msgstr ""
 
@@ -216,11 +322,11 @@ msgstr ""
 msgid "استثمار"
 msgstr ""
 
-#: contracts/models.py:14 real_estate_project/settings.py:156
+#: contracts/models.py:14 real_estate_project/settings.py:161
 msgid "بيع"
 msgstr ""
 
-#: contracts/models.py:15 real_estate_project/settings.py:157
+#: contracts/models.py:15 real_estate_project/settings.py:162
 msgid "بيع حصص شركات"
 msgstr ""
 
@@ -272,7 +378,8 @@ msgstr ""
 msgid "تاريخ التحديث"
 msgstr ""
 
-#: contracts/models.py:95 real_estate_project/settings.py:162
+#: contracts/models.py:95 documents/models.py:12
+#: real_estate_project/settings.py:167
 msgid "عقد"
 msgstr ""
 
@@ -280,7 +387,7 @@ msgstr ""
 msgid "العقود"
 msgstr ""
 
-#: contracts/models.py:110
+#: contracts/models.py:110 documents/models.py:22
 msgid "نوع المستند"
 msgstr ""
 
@@ -316,6 +423,79 @@ msgstr ""
 msgid "مستندات العقود"
 msgstr ""
 
+#: documents/models.py:10 real_estate_project/settings.py:165
+msgid "رسالة رسمية"
+msgstr ""
+
+#: documents/models.py:11 real_estate_project/settings.py:166
+msgid "إنذار قانوني"
+msgstr ""
+
+#: documents/models.py:13 real_estate_project/settings.py:168
+msgid "شهادة"
+msgstr ""
+
+#: documents/models.py:14
+msgid "إشعار إخلاء"
+msgstr ""
+
+#: documents/models.py:15
+msgid "إشعار زيادة إيجار"
+msgstr ""
+
+#: documents/models.py:18
+msgid "اسم القالب"
+msgstr ""
+
+#: documents/models.py:27 reports/models.py:24
+msgid "ملف القالب"
+msgstr ""
+
+#: documents/models.py:31
+msgid "المتغيرات المتاحة"
+msgstr ""
+
+#: documents/models.py:32
+msgid "قائمة بالمتغيرات التي يمكن استخدامها في القالب، مفصولة بفاصلة"
+msgstr ""
+
+#: documents/models.py:35 reports/models.py:35 services/models.py:17
+#: services/models.py:65
+msgid "نشط؟"
+msgstr ""
+
+#: documents/models.py:40
+msgid "قالب مستند"
+msgstr ""
+
+#: documents/models.py:41
+msgid "قوالب المستندات"
+msgstr ""
+
+#: documents/models.py:59 tenants/models.py:71
+msgid "الشركة"
+msgstr ""
+
+#: documents/models.py:66
+msgid "القالب المستخدم"
+msgstr ""
+
+#: documents/models.py:69
+msgid "رقم المستند"
+msgstr ""
+
+#: documents/models.py:78
+msgid "ملف المستند"
+msgstr ""
+
+#: documents/models.py:87
+msgid "مستند تم إنشاؤه"
+msgstr ""
+
+#: documents/models.py:88
+msgid "المستندات التي تم إنشاؤها"
+msgstr ""
+
 #: properties/models.py:7
 msgid "تجاري"
 msgstr ""
@@ -336,10 +516,6 @@ msgstr ""
 msgid "نوع المبنى"
 msgstr ""
 
-#: properties/models.py:24 tenants/models.py:46
-msgid "المدينة"
-msgstr ""
-
 #: properties/models.py:28
 msgid "إجمالي الطوابق"
 msgstr ""
@@ -352,7 +528,7 @@ msgstr ""
 msgid "المباني"
 msgstr ""
 
-#: properties/models.py:47 services/models.py:39
+#: properties/models.py:47 reports/models.py:51 services/models.py:39
 msgid "المبنى"
 msgstr ""
 
@@ -428,20 +604,125 @@ msgstr ""
 msgid "الوحدات"
 msgstr ""
 
-#: real_estate_project/settings.py:155
+#: real_estate_project/settings.py:160
 msgid "إستثمار"
 msgstr ""
 
-#: real_estate_project/settings.py:160
-msgid "رسالة رسمية"
+#: reports/models.py:8
+msgid "مالي"
 msgstr ""
 
-#: real_estate_project/settings.py:161
-msgid "إنذار قانوني"
+#: reports/models.py:9
+msgid "نسبة الإشغال"
 msgstr ""
 
-#: real_estate_project/settings.py:163
-msgid "شهادة"
+#: reports/models.py:10
+msgid "تحصيل الإيجار"
+msgstr ""
+
+#: reports/models.py:11
+msgid "المصروفات"
+msgstr ""
+
+#: reports/models.py:12
+msgid "تقرير مخصص"
+msgstr ""
+
+#: reports/models.py:15
+msgid "اسم التقرير"
+msgstr ""
+
+#: reports/models.py:19
+msgid "نوع التقرير"
+msgstr ""
+
+#: reports/models.py:30
+msgid "استعلام SQL"
+msgstr ""
+
+#: reports/models.py:32
+#, python-brace-format
+msgid "استخدم {building.id} و {start_date} و {end_date} كمتغيرات"
+msgstr ""
+
+#: reports/models.py:40
+msgid "قالب تقرير"
+msgstr ""
+
+#: reports/models.py:41
+msgid "قوالب التقارير"
+msgstr ""
+
+#: reports/models.py:58
+msgid "قالب التقرير"
+msgstr ""
+
+#: reports/models.py:61
+msgid "رقم التقرير"
+msgstr ""
+
+#: reports/models.py:66
+msgid "تاريخ البداية"
+msgstr ""
+
+#: reports/models.py:69
+msgid "تاريخ النهاية"
+msgstr ""
+
+#: reports/models.py:76
+msgid "ملف التقرير"
+msgstr ""
+
+#: reports/models.py:80
+msgid "معلمات التقرير"
+msgstr ""
+
+#: reports/models.py:86
+msgid "تقرير تم إنشاؤه"
+msgstr ""
+
+#: reports/models.py:87
+msgid "التقارير التي تم إنشاؤها"
+msgstr ""
+
+#: reports/models.py:95
+msgid "انتهاء العقد"
+msgstr ""
+
+#: reports/models.py:96
+msgid "استحقاق دفعة"
+msgstr ""
+
+#: reports/models.py:97
+msgid "انتهاء صلاحية مستند"
+msgstr ""
+
+#: reports/models.py:98
+msgid "إشعار مخصص"
+msgstr ""
+
+#: reports/models.py:109
+msgid "نوع الإشعار"
+msgstr ""
+
+#: reports/models.py:118
+msgid "الرسالة"
+msgstr ""
+
+#: reports/models.py:124
+msgid "تم الإرسال؟"
+msgstr ""
+
+#: reports/models.py:128
+msgid "وقت الإرسال"
+msgstr ""
+
+#: reports/models.py:139
+msgid "إشعار"
+msgstr ""
+
+#: reports/models.py:140
+msgid "الإشعارات"
 msgstr ""
 
 #: services/models.py:9
@@ -450,10 +731,6 @@ msgstr ""
 
 #: services/models.py:13
 msgid "وصف الخدمة"
-msgstr ""
-
-#: services/models.py:17 services/models.py:65
-msgid "نشط؟"
 msgstr ""
 
 #: services/models.py:22 services/models.py:33
@@ -542,10 +819,6 @@ msgstr ""
 
 #: tenants/models.py:61
 msgid "الشركات المستأجرة"
-msgstr ""
-
-#: tenants/models.py:71
-msgid "الشركة"
 msgstr ""
 
 #: tenants/models.py:74
